@@ -2,10 +2,10 @@ import React from "react";
 
 const perguntas = [
   { numero: "Pergunta 1", pergunta: "O que é JSX?", resposta: "Uma extensão de linguagem do JavaScript" },
-  { numero: "Pergunta 2", pergunta: "O React é __", resposta: "ma biblioteca JavaScript para construção de interfaces" },
-  { numero: "Pergunta 3", pergunta: "Componentes devem iniciar com __", resposta: "letra maiúscula" },
+  { numero: "Pergunta 2", pergunta: "O React é __", resposta: "Uma biblioteca JavaScript para construção de interfaces" },
+  { numero: "Pergunta 3", pergunta: "Componentes devem iniciar com ", resposta: "letra maiúscula" },
   { numero: "Pergunta 4", pergunta: "Podemos colocar __ dentro do JSX", resposta: "expressões" },
-  { numero: "Pergunta 5", pergunta: " O ReactDOM nos ajuda __ ", resposta: "interagindo com a DOM para colocar componentes React na mesma" },
+  { numero: "Pergunta 5", pergunta: "O ReactDOM nos ajuda __ ", resposta: "interagindo com a DOM para colocar componentes React na mesma" },
   { numero: "Pergunta 6", pergunta: "Usamos o npm para __", resposta: "gerenciar os pacotes necessários e suas dependências" },
   { numero: "Pergunta 7", pergunta: "Usamos props para __", resposta: "passar diferentes informações para componentes " },
   { numero: "Pergunta 8", pergunta: "Usamos estado (state) para __", resposta: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente" },
@@ -41,10 +41,10 @@ function Perguntas(props) {
     return (
       <div className = {`perguntas ${cor}`} >
         <p>{props.numeroPergunta.numero}</p> 
-        {cor == "" && <ion-icon name="play-outline" onClick={() => setTela("tela2")}></ion-icon>}
-        {cor == "red" && <ion-icon name="play-outline" ></ion-icon>}
-        {cor == "orange" && <ion-icon name="play-outline" ></ion-icon>}
-        {cor == "green" && <ion-icon name="play-outline" ></ion-icon>}
+        {cor === "" && <ion-icon name="play-outline" onClick={() => setTela("tela2")}></ion-icon>}
+        {cor === "red" && <ion-icon name="play-outline" ></ion-icon>}
+        {cor === "orange" && <ion-icon name="play-outline" ></ion-icon>}
+        {cor === "green" && <ion-icon name="play-outline" ></ion-icon>}
       </div>
     );
 
@@ -61,7 +61,7 @@ function Perguntas(props) {
       <div className="tela-3">
         <h1>{props.dados.resposta}</h1>
 
-        <button className="botao-tela3" onClick={
+        <button className="botao-tela3red" onClick={
           () => {
             setTela("tela1");
             setCor("red");
@@ -69,7 +69,7 @@ function Perguntas(props) {
             props.concluidos("red");
           }}>Não lembrei</button>
 
-        <button className="botao-tela3" onClick={
+        <button className="botao-tela3orange" onClick={
           () => {
             setTela("tela1");
             setCor("orange");
@@ -78,7 +78,7 @@ function Perguntas(props) {
           }
         }>Quase não lembrei</button>
 
-        <button className="botao-tela3" onClick={
+        <button className="botao-tela3green" onClick={
           () => {
             setTela("tela1");
             setCor("green");
@@ -95,7 +95,7 @@ function Resultado(props) {
     let fim = props.concluidos.length === props.perguntas;
     let mensagem = true;
     for(let i = 0;i < props.concluidos.length; i++) {
-      if(props.concluidos[i] == "red") {
+      if(props.concluidos[i] === "red") {
         mensagem = false;
       }
     }

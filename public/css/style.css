@@ -9,6 +9,7 @@ body {
     justify-content: center;
     text-align: center;
     font-family: 'Recursive', 'Righteous';
+    
 }
 
 header {
@@ -118,28 +119,92 @@ footer {
 }
 
 .tela-2 {
-    width: 299px;
-    height: 131px;
+    width: 180px;
+    height: 51px;
     background-color: #FFFFD4;
+    margin-bottom: 5px;
+    font-size: 14px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
 
-.tela-2 h1 {
+.tela-2 p {
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 22px;
-    color: #333333;   
+    color: #333333;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7px;
 }
 
 .tela-2 img {
-    justify-content: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+    font-size: 7px;
+    position: relative;
+    bottom: 0px;
+    margin-top: 10px;
+}
+
+.tela-3 {
+    width: 180px;
+    height: 71px;
+    background-color: #FFFFD4;
+    margin-bottom: 5px;
+    font-size: 14px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.tela-3 h1 {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #333333;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+.botao-tela3red {
+    width: 50px;
+    height: 25px;
+    font-size: 7px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    background: #FF3030;
+    border-radius: 5px;
+}
+
+.botao-tela3orange {
+    width: 50px;
+    height: 25px;
+    font-size: 6px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    background: #FF922E;
+    border-radius: 5px;
 }
 
 
-
-
-
+.botao-tela3green {
+    width: 50px;
+    height: 25px;
+    font-size: 7px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    background: #2FBE34;
+    border-radius: 5px;
+}
 
 
 
