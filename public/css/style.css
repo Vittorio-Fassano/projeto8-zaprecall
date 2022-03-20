@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FB6B6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Recursive', 'Righteous';
+}
+
+header {
+    width: 127.8px;
+    height: 30px;
+    display: flex;
+    font-family: 'Righteous';
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 25px;
+    margin-top: 22px;
+    margin-bottom: 38px;
+    margin-left: 22px;
+}
+
+header h1 {
+    margin-left: 7px;
+}
+
+
+main {
+    width: 183;
+    height: 420px;
+}
+
+.perguntas {
+    Width: 182px;
+    Height: 40px;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border-color: white;
+}
+
+.perguntas p {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 6px;
+}
+
+ion-icon {
+    margin-right: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333333;
+}
+
+.primeira-tela img {
+    margin-top: 90px;
+}
+
+.primeira-tela h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin-left: 17px;
+}
+
+.botao {
+    width: 141px;
+    height: 31px;
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #D70900;
+    margin-top: 70px;
+}
+
+.tela-2 {
+    width: 299px;
+    height: 131px;
+    background-color: #FFFFD4;
+}
+
+.tela-2 h1 {
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;   
+}
+
+.tela-2 img {
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+.perguntas.red {
+    color: #FF3030 !important;
+    text-decoration: line-through #FF3030;
+
+}
+
+.perguntas.green {
+    color: #2FBE34 !important;
+    text-decoration: line-through #2FBE34;
+}
+
+.perguntas.orange {
+    color: #FF922E !important;
+    text-decoration: line-through #FF922E;
+}
