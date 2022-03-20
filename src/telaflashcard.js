@@ -60,7 +60,7 @@ function Perguntas(props) {
     return (
       <div className="tela-3">
         <h1>{props.dados.resposta}</h1>
-
+        <div className="botoes">
         <button className="botao-tela3red" onClick={
           () => {
             setTela("tela1");
@@ -86,6 +86,7 @@ function Perguntas(props) {
             props.concluidos("green");
           }
         }>Zap!</button>
+        </div>
       </div>
     )
   };
